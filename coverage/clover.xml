@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1576528684340" clover="3.2.0">
+  <project timestamp="1576528684340" name="All files">
+    <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="7" coveredelements="7" complexity="0" loc="7" ncloc="7" packages="1" files="2" classes="2"/>
+    <file name="Activity.js" path="C:\Users\Dan\Documents\alchemy\career-track\labs\lab-11-travel-manager\lib\models\Activity.js">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+    </file>
+    <file name="Trip.js" path="C:\Users\Dan\Documents\alchemy\career-track\labs\lab-11-travel-manager\lib\models\Trip.js">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
