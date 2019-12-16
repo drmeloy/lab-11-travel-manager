@@ -36,7 +36,8 @@ describe('activities routes', () => {
       tripId: trip._id,
       activity: 'Whale watching',
       date: 'December 25th, 2019',
-      time: '11:00am'
+      time: '11:00am',
+      location: 'London',
     });
   };
 
@@ -47,7 +48,8 @@ describe('activities routes', () => {
         tripId: trip._id,
         activity: 'Whale watching',
         date: 'December 25th, 2019',
-        time: '11:00am'
+        time: '11:00am',
+        location: 'London'
       })
       .then(res => {
         expect(res.body).toEqual({
@@ -56,6 +58,8 @@ describe('activities routes', () => {
           activity: 'Whale watching',
           date: 'December 25th, 2019',
           time: '11:00am',
+          location: 'London',
+          weather: expect.any(String),
           __v: 0
         });
       });
@@ -64,7 +68,7 @@ describe('activities routes', () => {
   it('can delete an activity', async() => {
     const activity = await createActivity();
 
-    request(app)
+    return request(app)
       .delete(`/api/v1/activities/${activity._id}`)
       .then(res => {
         expect(res.body).toEqual({
@@ -73,6 +77,7 @@ describe('activities routes', () => {
           activity: 'Whale watching',
           date: 'December 25th, 2019',
           time: '11:00am',
+          location: 'London',
           __v: 0
         });
       });
