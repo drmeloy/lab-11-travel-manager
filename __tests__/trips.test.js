@@ -47,12 +47,13 @@ describe('trips routes', () => {
     return request(app)
       .get(`/api/v1/trips/${trip._id}`)
       .then(res => {
-        expect(res.body).toEqual({
+        expect(res.body).toMatchObject({
           _id: trip._id.toString(),
           name: 'Eurotrip',
           location: 'Europe',
           startDate: 'December 21st, 2019',
           endDate: 'January 6th, 2020',
+          activities: [],
           __v: 0
         });
       });
